@@ -1,12 +1,12 @@
 const { default: makeWASocket, useMultiFileAuthState, DisconnectReason, downloadMediaMessage } = require('@whiskeysockets/baileys');
 const { Boom } = require('@hapi/boom');
-const translate = require('google-translate-api-x');
 const langdetect = require('langdetect');
 const fs = require('fs');
 const { exec } = require('child_process');
 const ffmpeg = require('fluent-ffmpeg');
 const ffmpegInstaller = require('@ffmpeg-installer/ffmpeg');
 const path = require('path');
+const fetch = require('node-fetch');
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
@@ -28,24 +28,29 @@ const logChat = (messageData) => {
   fs.writeFileSync(logFilePath, JSON.stringify(logData, null, 2));
 };
 
-// Retry logic for Google Translate API
+// Free translation logic using Google Translate Web API
 const translateWithRetry = async (text, fromLang, toLang, maxRetries = 5, delayTime = 5000) => {
   let retries = 0;
   while (retries < maxRetries) {
     try {
-      const res = await translate(text, { from: fromLang, to: toLang, forceFrom: true });
-      return res.text;
+      const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=${fromLang}&tl=${toLang}&dt=t&q=${encodeURIComponent(text)}`;
+      const res = await fetch(url);
+
+      if (!res.ok) throw new Error('Translation failed due to network error');
+      const data = await res.json();
+
+      return data[0]?.[0]?.[0] || '';
     } catch (err) {
-      if (err.message.includes('Too Many Requests') && retries < maxRetries) {
-        retries++;
+      retries++;
+      if (retries < maxRetries) {
         console.log(`Retrying translation... Attempt ${retries}`);
-        await new Promise(resolve => setTimeout(resolve, delayTime)); // Delay before retrying
+        await new Promise(resolve => setTimeout(resolve, delayTime));
       } else {
-        throw err;
+        console.error('Max retries reached for translation');
+        throw new Error('Max retries reached for translation');
       }
     }
   }
-  throw new Error('Max retries reached for translation');
 };
 
 async function startSock() {
@@ -63,7 +68,7 @@ async function startSock() {
     const { connection, lastDisconnect } = update;
     if (connection === 'close') {
       const shouldReconnect = (lastDisconnect.error = new Boom(lastDisconnect?.error))?.output?.statusCode !== DisconnectReason.loggedOut;
-      console.log('connection closed due to', lastDisconnect?.error, ', reconnecting', shouldReconnect);
+      console.log('Connection closed due to:', lastDisconnect?.error, ', reconnecting:', shouldReconnect);
       if (shouldReconnect) startSock();
     } else if (connection === 'open') {
       console.log('✅ connected to WhatsApp');
@@ -79,7 +84,7 @@ async function startSock() {
     const from = msg.key.remoteJid;
     const text = msg.message.conversation || msg.message.extendedTextMessage?.text;
 
-    // ✅ voice message handling
+    // Voice message handling
     if (msg.message.audioMessage) {
       try {
         const buffer = await downloadMediaMessage(msg, 'buffer', {}, { logger: console });
@@ -105,7 +110,7 @@ async function startSock() {
 
         exec(`python transcribe.py "${mp3Path}"`, async (err, stdout, stderr) => {
           if (err) {
-            console.error('❌ Transcribe error:', err);
+            console.error('❌ Transcription error:', err);
             await sock.sendMessage(from, { text: '❌ Failed to transcribe voice message.' });
             return;
           }
@@ -113,13 +118,19 @@ async function startSock() {
           const transcription = stdout.trim();
           console.log('📝 Transcribed:', transcription);
 
-          let lang = langdetect.detect(transcription)[0]?.lang || 'en';
+          // Detect language safely
+          let lang = 'en'; // default to English
+          const detectedLang = langdetect.detect(transcription);
+          
+          if (detectedLang && detectedLang.length > 0) {
+            lang = detectedLang[0]?.lang || 'en';
+          }
+
           if (lang === 'zh-tw') lang = 'zh-CN';
 
           try {
             if (lang !== 'en') {
               const translated = await translateWithRetry(transcription, lang, 'en');
-
               await sock.sendMessage(from, {
                 text: `🈶 translated:\n${translated}`
               });
@@ -133,11 +144,11 @@ async function startSock() {
         });
       } catch (err) {
         console.error('❌ Voice message error:', err);
-        await sock.sendMessage(from, { text: '❌ Failed to process voice message.' });
+        await sock.sendMessage(from, { text: '❌ Failed to process voice message. Please try again later.' });
       }
     }
 
-    // ✅ text message handling
+    // Text message handling
     if (text) {
       try {
         const messageData = {
@@ -153,7 +164,7 @@ async function startSock() {
 
         if (detectedLanguage === 'en') {
           await sock.sendMessage(from, {
-            text: `🈶 translated:\n${text}`
+            text: `✅ The message is in English. No translation needed.`
           });
           return;
         }
@@ -182,22 +193,11 @@ async function startSock() {
           text: `🈶 translated:\n${translated}`
         });
       } catch (err) {
-        await sock.sendMessage(from, { text: '❌ Failed to translate. Try again later.' });
-        console.error('Translation error:', err);
+        console.error('❌ Translation error:', err);
+        await sock.sendMessage(from, { text: '❌ Failed to translate. Please try again later.' });
       }
     }
   });
-
-  // Keep bot alive and handle reconnections periodically
-  setInterval(async () => {
-    try {
-      await sock.ping();
-      console.log('🟢 Bot is alive and connected.');
-    } catch (error) {
-      console.error('❌ Connection lost, trying to reconnect...');
-      startSock();
-    }
-  }, 60000); // Ping every minute to keep the connection alive
 }
 
 startSock();

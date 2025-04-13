@@ -10,7 +10,7 @@
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@hapi/boom": "^9.1.4",
     "@vitalets/google-translate-api": "^9.2.1",
-    "@whiskeysockets/baileys": "^6.17.16",
+    "@whiskeysockets/baileys": "^6.7.16",
     "axios": "^1.8.4",
     "express": "^5.1.0",
     "fluent-ffmpeg": "^2.1.3",

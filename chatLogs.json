@@ -514,5 +514,263 @@
     "timestamp": "2025-04-13T13:01:15.688Z",
     "message": "Hello",
     "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T13:18:17.892Z",
+    "message": "hi",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T13:18:19.123Z",
+    "message": "Hi",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T13:18:27.597Z",
+    "message": "my name is adam",
+    "type": "original"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T13:18:35.638Z",
+    "message": "闆，早，我店裡電腦Setting會需要你安排人幫我弄，我會需要多久前通知你呢？因為目前還在裝修著",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T13:18:37.163Z",
+    "message": "Manager, morning, the computer settings in my store will need you to arrange someone to help me. How long will I need to notify you? ",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T13:19:14.763Z",
+    "message": "闆，早，我店裡電腦Setting會需要你安排人幫我弄，我會需要多久前通知你呢？因為目前還在裝修著",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T13:19:16.568Z",
+    "message": "Manager, morning, the computer settings in my store will need you to arrange someone to help me. How long will I need to notify you? ",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T13:20:16.202Z",
+    "message": "hi",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T13:20:18.650Z",
+    "message": "Hi",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T13:29:12.673Z",
+    "message": "gi",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T13:29:13.929Z",
+    "message": "Gi",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T13:29:18.644Z",
+    "message": "hello there",
+    "type": "original"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T13:29:24.359Z",
+    "message": "闆，早，我店裡電腦Setting會需要你安排人幫我弄，我會需要多久前通知你呢？因為目前還在裝修著",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T13:29:25.556Z",
+    "message": "Manager, morning, the computer settings in my store will need you to arrange someone to help me. How long will I need to notify you? ",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T13:40:58.075Z",
+    "message": "hi",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T13:40:59.323Z",
+    "message": "Hi",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T13:41:08.079Z",
+    "message": "hllll",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T13:41:10.613Z",
+    "message": "hllll",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T13:41:17.883Z",
+    "message": "what",
+    "type": "original"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T13:44:19.192Z",
+    "message": "hi",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T13:44:20.445Z",
+    "message": "Hi",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T13:44:49.260Z",
+    "message": "hello",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T13:44:50.493Z",
+    "message": "Hello",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T13:44:50.619Z",
+    "message": "what",
+    "type": "original"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T13:45:03.919Z",
+    "message": "eyyo",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T13:45:05.640Z",
+    "message": "eyyo",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T13:45:43.693Z",
+    "message": "what",
+    "type": "original"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T13:46:57.836Z",
+    "message": "what",
+    "type": "original"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T13:47:02.862Z",
+    "message": "if",
+    "type": "original"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T13:48:34.777Z",
+    "message": "w",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T13:48:37.344Z",
+    "message": "w",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T13:48:40.741Z",
+    "message": "helloooo",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T13:48:42.518Z",
+    "message": "Helloooo",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T13:50:49.696Z",
+    "message": "jj",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T13:50:50.904Z",
+    "message": "jj",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T13:58:40.049Z",
+    "message": "hello",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T13:58:41.297Z",
+    "message": "Hello",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T14:01:32.335Z",
+    "message": "g",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T14:01:33.580Z",
+    "message": "g",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T14:01:58.714Z",
+    "message": "hello",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T14:02:01.017Z",
+    "message": "Hello",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T14:02:46.459Z",
+    "message": "ff",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T14:02:48.426Z",
+    "message": "ff",
+    "type": "translated"
   }
 ]
