@@ -1,0 +1,494 @@
+[
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-12T13:14:59.760Z",
+    "message": "我叫 Adam。我来自韩国",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-12T13:15:01.110Z",
+    "message": "My name is Adam. I'm from South Korea",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-12T13:15:07.837Z",
+    "message": "hi",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-12T13:15:09.125Z",
+    "message": "hi",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-12T13:16:35.981Z",
+    "message": "hi",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-12T13:16:37.245Z",
+    "message": "hi",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-12T13:16:43.746Z",
+    "message": "hello",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-12T13:16:44.996Z",
+    "message": "hello",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-12T13:16:57.098Z",
+    "message": "我叫 Adam。我来自韩国",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-12T13:16:58.416Z",
+    "message": "My name is Adam. I'm from South Korea",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-12T13:17:30.085Z",
+    "message": "what is your name",
+    "type": "original"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-12T13:18:56.882Z",
+    "message": "请问如果我现在要换去data link，是怎样的一个process?",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-12T13:18:58.838Z",
+    "message": "What kind of process would it be if I want to change to data link now?",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-12T13:19:34.871Z",
+    "message": "亚当·英俊。",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-12T13:19:36.876Z",
+    "message": "Adam handsome.",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-12T13:20:11.715Z",
+    "message": "今晚想在 mamak 商店吃饭吗？我饿了",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-12T13:20:13.396Z",
+    "message": "Want to have a meal at the mamak store tonight? I'm hungry",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-12T13:21:48.713Z",
+    "message": "这个世界附近最帅的人是谁？ 是的，应该是亚当。",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-12T13:21:50.258Z",
+    "message": "Who is the most handsome person near this world? Yes, it should be Adam.",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-12T13:22:08.723Z",
+    "message": "哈哈哈",
+    "type": "original"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-12T13:22:49.532Z",
+    "message": "您好，我对使用您的系统感兴趣。您能给我更多信息吗？",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-12T13:22:51.068Z",
+    "message": "Hello, I'm interested in using your system. Can you give me more information?",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-12T13:23:20.462Z",
+    "message": "我想修理我的手机",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-12T13:23:21.755Z",
+    "message": "I want to fix my phone",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-12T13:41:04.569Z",
+    "message": "hello",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-12T13:41:06.083Z",
+    "message": "hello",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T05:26:31.535Z",
+    "message": "hi",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T05:26:32.871Z",
+    "message": "hi",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T05:26:47.276Z",
+    "message": "what is your name",
+    "type": "original"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T05:26:55.594Z",
+    "message": "我想修理我的手机",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T05:26:57.186Z",
+    "message": "I want to fix my phone",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T05:27:12.234Z",
+    "message": "老闆，早，我店裡電腦Setting會需要你安排人幫我弄，我會需要多久前通知你呢？因為目前還在裝修著",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T05:27:14.094Z",
+    "message": "Boss, morning, the computer settings in my store will need you to arrange someone to help me. How long will I need to notify you? Because it's still being renovated",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T05:32:09.139Z",
+    "message": "hello adam",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T05:32:10.728Z",
+    "message": "hello adam",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T05:38:10.442Z",
+    "message": "我會需要多久",
+    "type": "original"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T05:43:29.626Z",
+    "message": "[Voice] undefined",
+    "type": "original"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T05:44:01.177Z",
+    "message": "[Voice] undefined",
+    "type": "original"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T05:59:47.523Z",
+    "message": "hello DASD",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T05:59:49.502Z",
+    "message": "hello DASD",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T05:59:58.951Z",
+    "message": "老闆，早，我店裡電腦Setting會需要你安排人幫我弄，我會需要多久前通知你呢？因為目前還在裝修著",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T06:00:00.302Z",
+    "message": "Boss, morning, the computer settings in my store will need you to arrange someone to help me. How long will I need to notify you? Because it's still being renovated",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T06:50:02.229Z",
+    "message": "hi",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T06:50:03.575Z",
+    "message": "hi",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T07:36:09.031Z",
+    "message": "hi",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T07:36:10.388Z",
+    "message": "hi",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T07:38:17.216Z",
+    "message": "老闆，早，我店裡電腦Setting會需要你安排人幫我弄，我會需要多久前通知你呢？因為目前還在裝修著",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T07:38:19.781Z",
+    "message": "Boss, morning, the computer settings in my store will need you to arrange someone to help me. How long will I need to notify you? Because it's still being renovated",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T07:42:43.385Z",
+    "message": "hi",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T07:42:44.685Z",
+    "message": "hi",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T07:47:49.093Z",
+    "message": "hi",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T07:47:50.418Z",
+    "message": "hi",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T07:53:32.680Z",
+    "message": "h",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T07:53:34.052Z",
+    "message": "H",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T08:04:20.722Z",
+    "message": "hello adam",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T08:04:23.000Z",
+    "message": "hello adam",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T08:04:32.768Z",
+    "message": "what is your name",
+    "type": "original"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T10:42:16.091Z",
+    "message": "hi",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T10:42:17.791Z",
+    "message": "Hi",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T10:44:30.543Z",
+    "message": "闆，早，我店裡電腦Setting會需要你安排人幫我弄，我會需要多久前通知你呢？因為目前還在裝修著",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T10:44:32.242Z",
+    "message": "Manager, morning, the computer settings in my store will need you to arrange someone to help me. How long will I need to notify you? Because it's still being renovated",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T10:44:37.176Z",
+    "message": "So you can get it done in both countries.",
+    "type": "original"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T10:50:06.967Z",
+    "message": "闆，早，我店裡電腦Setting會需要你安排人幫我弄，我會需要多久前通知你呢？因為目前還在裝修著",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T10:50:08.208Z",
+    "message": "Manager, morning, the computer settings in my store will need you to arrange someone to help me. How long will I need to notify you? Because it's still being renovated",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T10:51:49.397Z",
+    "message": "闆，早，我店裡電腦Setting會需要你安排人幫我弄，我會需要多久前通知你呢？因為目前還在裝修著",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T10:51:51.026Z",
+    "message": "Manager, morning, the computer settings in my store will need you to arrange someone to help me. How long will I need to notify you? Because it's still being renovated",
+    "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T10:58:31.501Z",
+    "message": "我爱你",
+    "type": "original"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T10:58:43.425Z",
+    "message": "闆，早，我店裡電腦Setting會需要你安排人幫我弄，我會需要多久前通知你呢？因為目前還在裝修著",
+    "type": "original"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T10:59:15.515Z",
+    "message": "我喜欢你",
+    "type": "original"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T11:02:30.712Z",
+    "message": "我喜欢你",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T11:02:32.079Z",
+    "message": "I like you",
+    "type": "translated"
+  },
+  {
+    "sender": "60142755611@s.whatsapp.net",
+    "timestamp": "2025-04-13T11:04:59.540Z",
+    "message": "我很可爱",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T11:05:01.133Z",
+    "message": "I'm very cute",
+    "type": "translated"
+  },
+  {
+    "sender": "60183149638@s.whatsapp.net",
+    "timestamp": "2025-04-13T11:05:25.529Z",
+    "message": "ching chong",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T11:05:27.292Z",
+    "message": "Ching Chong",
+    "type": "translated"
+  },
+  {
+    "sender": "60183149638@s.whatsapp.net",
+    "timestamp": "2025-04-13T11:07:23.389Z",
+    "message": "Adam gay",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T11:07:25.482Z",
+    "message": "Adam Gay",
+    "type": "translated"
+  },
+  {
+    "sender": "60127686109@s.whatsapp.net",
+    "timestamp": "2025-04-13T11:35:43.768Z",
+    "message": "ahak",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T11:35:45.636Z",
+    "message": "extreme",
+    "type": "translated"
+  },
+  {
+    "sender": "60127686109@s.whatsapp.net",
+    "timestamp": "2025-04-13T11:38:11.649Z",
+    "message": "abess setiap ahad takleh guna kee",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T11:38:13.352Z",
+    "message": "Abess every Sunday Takleh Use Kee",
+    "type": "translated"
+  },
+  {
+    "sender": "60127686109@s.whatsapp.net",
+    "timestamp": "2025-04-13T11:38:26.088Z",
+    "message": "HAHAHAHAHA ROJAK",
+    "type": "original"
+  }
+]
