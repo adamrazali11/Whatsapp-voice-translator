@@ -28,6 +28,26 @@ const logChat = (messageData) => {
   fs.writeFileSync(logFilePath, JSON.stringify(logData, null, 2));
 };
 
+// Retry logic for Google Translate API
+const translateWithRetry = async (text, fromLang, toLang, maxRetries = 5, delayTime = 5000) => {
+  let retries = 0;
+  while (retries < maxRetries) {
+    try {
+      const res = await translate(text, { from: fromLang, to: toLang, forceFrom: true });
+      return res.text;
+    } catch (err) {
+      if (err.message.includes('Too Many Requests') && retries < maxRetries) {
+        retries++;
+        console.log(`Retrying translation... Attempt ${retries}`);
+        await new Promise(resolve => setTimeout(resolve, delayTime)); // Delay before retrying
+      } else {
+        throw err;
+      }
+    }
+  }
+  throw new Error('Max retries reached for translation');
+};
+
 async function startSock() {
   const { state, saveCreds } = await useMultiFileAuthState('./baileys_auth_info');
 
@@ -63,8 +83,8 @@ async function startSock() {
     if (msg.message.audioMessage) {
       try {
         const buffer = await downloadMediaMessage(msg, 'buffer', {}, { logger: console });
-        const oggPath = './voice.ogg';
-        const mp3Path = './voice.mp3';
+        const oggPath = path.join(__dirname, 'voice.ogg');
+        const mp3Path = path.join(__dirname, 'voice.mp3');
 
         fs.writeFileSync(oggPath, buffer);
         console.log('✅ voice.ogg saved');
@@ -98,10 +118,10 @@ async function startSock() {
 
           try {
             if (lang !== 'en') {
-              const translated = await translate(transcription, { from: lang, to: 'en', forceFrom: true });
+              const translated = await translateWithRetry(transcription, lang, 'en');
 
               await sock.sendMessage(from, {
-                text: `🈶 translated:\n${translated.text}`
+                text: `🈶 translated:\n${translated}`
               });
             } else {
               await sock.sendMessage(from, { text: `🈶 translated:\n${transcription}` });
@@ -147,9 +167,7 @@ async function startSock() {
 
         await new Promise(resolve => setTimeout(resolve, 1000));
 
-        const res = await translate(text, { from: detectedLanguage, to: 'en', forceFrom: true });
-        const translated = res.text;
-
+        const translated = await translateWithRetry(text, detectedLanguage, 'en');
         const translatedData = {
           sender: 'Bot',
           timestamp: new Date().toISOString(),
