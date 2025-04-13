@@ -502,5 +502,17 @@
     "timestamp": "2025-04-13T12:24:21.661Z",
     "message": "Hello",
     "type": "translated"
+  },
+  {
+    "sender": "601151406321@s.whatsapp.net",
+    "timestamp": "2025-04-13T13:01:13.658Z",
+    "message": "hello",
+    "type": "original"
+  },
+  {
+    "sender": "Bot",
+    "timestamp": "2025-04-13T13:01:15.688Z",
+    "message": "Hello",
+    "type": "translated"
   }
 ]
