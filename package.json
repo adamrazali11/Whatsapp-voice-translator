@@ -4,8 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node bot/index.js"
-  },
+    "start": "concurrently \"pip install -r requirements.txt\" \"node bot/index.js\""
+  }
+  ,
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@hapi/boom": "^9.1.4",
