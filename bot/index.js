@@ -7,6 +7,12 @@ const { exec } = require('child_process');
 const ffmpeg = require('fluent-ffmpeg');
 const ffmpegInstaller = require('@ffmpeg-installer/ffmpeg');
 const path = require('path');
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 3000;
+
+app.get('/', (_, res) => res.send('Bot is alive!'));
+app.listen(port, () => console.log(`✅ Server running on port ${port}`));
 
 ffmpeg.setFfmpegPath(ffmpegInstaller.path);
 
@@ -163,6 +169,17 @@ async function startSock() {
       }
     }
   });
+
+  // Keep bot alive and handle reconnections periodically
+  setInterval(async () => {
+    try {
+      await sock.ping();
+      console.log('🟢 Bot is alive and connected.');
+    } catch (error) {
+      console.error('❌ Connection lost, trying to reconnect...');
+      startSock();
+    }
+  }, 60000); // Ping every minute to keep the connection alive
 }
 
 startSock();
